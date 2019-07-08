@@ -9,7 +9,7 @@ I'll use the data to analyse what sorts of people were likely to survive. In par
 
 ## Results
 ### What I found out
-<to be added>
+*to be added*
 
 ### Skills I learned
-<to be added>
+*to be added*
