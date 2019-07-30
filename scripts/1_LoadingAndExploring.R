@@ -13,4 +13,5 @@ test  = read.csv('data/test.csv', stringsAsFactors = F)
 
 full = bind_rows(train, test)
 
+#viewing the data
 str(full)
