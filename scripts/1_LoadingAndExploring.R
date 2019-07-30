@@ -6,5 +6,11 @@ library('dplyr') # data manipulation
 library('mice') # imputation
 library('randomForest') # classification algorithm
 
-train <- read.csv('../data/train.csv', stringsAsFactors = F)
-test  <- read.csv('../data/test.csv', stringsAsFactors = F)
+
+#Loading data
+train = read.csv('data/train.csv', stringsAsFactors = F)
+test  = read.csv('data/test.csv', stringsAsFactors = F)
+
+full = bind_rows(train, test)
+
+str(full)
