@@ -11,7 +11,7 @@ I'll use the data to analyse what sorts of people were likely to survive. In par
 ### 1 Loading and exploring the data
 I decided before anything else that i would divide the whole process into seperate R script files to more easily deliniate between the seperate step in creating a machine learning model, thus all the code for this section is in 1_LoadingAndExploring.R.
 
-The first step in creating the ML model was to load in and familiarise myself with the data. 
+The first step in creating the ML model was to load in and familiarise myself with the data. According the the Kaggle competition the varuiables and their meaning are as foillows:
 
 |Variable Name | Description|
 |---|---|
@@ -26,6 +26,8 @@ The first step in creating the ML model was to load in and familiarise myself wi
 |Fare | Fare|
 |Cabin | Cabin|
 |Embarked | Port of embarkation|
+
+The 'name' variable may need some work as it's not especially helpful as is, it also includes title and surname which are very informative peices of information to have. A important thing to note is that the 'pclass' variable is the class of the ticket the user had (being first, second or third) this will function as a rough approximation for socio-economic class.
 
 ## Results
 ### What I found out
