@@ -31,10 +31,13 @@ The `name` variable may need some work as it's not especially helpful as is, it 
 
 ### 2 Feature Engineering
 [script here](scripts/2_FeatureEngineering.R)
+
 The next step in the tutorial is "Featuring engineering", being totally new to machine learning I googled what this is and according to wikipedia it is defined as:
 > Feature engineering is the process of using domain knowledge of the data to create features that make machine learning algorithms work. Feature engineering is fundamental to the application of machine learning, and is both difficult and expensive.
 
-The next step is to create a `title` variable using regex to strip the unneeded characters and add it back to the data frame.
+Clearly feature engineeringa as a skill is something that comes with experience. Given this is my first outing with machine learning I'll simply follow the Kaggle tutorial to the letter and save the experimentation for the next outing. 
+
+The first step is to create a `title` variable using regex to strip the unneeded characters and add it back to the data frame. Comparing the values we get against sex in a table we see a lot of single or low occurence titles. Given this we readjust the feature to lump these rarer titles to a uniform definition. Atr the same time we can also combine titles that are effectively the same, such as `Mlle` which is an abbreviation for Mademoiselle, equivalent to the english `Miss`, etc.
 
 ---
 
